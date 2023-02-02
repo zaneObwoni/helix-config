@@ -1,0 +1,39 @@
+# theme = 'dark_plus'
+# theme = 'tokyonight_storm'
+theme = "solarized_dark"
+
+# Editor setting
+[editor]
+auto-save = true
+line-number = 'relative'
+mouse = false
+rulers = [80]
+shell = ['zsh', '-c']
+bufferline = 'always'
+cursorline = true
+color-modes = true
+
+
+[editor.cursor-shape]
+insert = 'bar'
+normal = 'block'
+select = 'underline'
+
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+render = true
+
+# Keyboards mappings
+# At most one section each of 'keys.normal', 'keys.insert' and 'keys.select'
+[keys.normal]
+esc = ['collapse_selection', 'keep_primary_selection']
+C-p = ['move_line_up', 'scroll_up']
+C-n = ['move_line_down', 'scroll_down']
+
+[keys.insert]
+C-c = ['normal_mode'] # enter normal mode
+j = {k = 'normal_mode'} # maps `jk` to exit insert mode 
+
